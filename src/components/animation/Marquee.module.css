@@ -1,0 +1,32 @@
+.root {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.copy {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--marquee-gap, var(--space-5));
+  /* trailing space equals the gap, so the seam between copies matches the rest */
+  padding-right: var(--marquee-gap, var(--space-5));
+}
+
+/* reduced motion: a plain wrapping row, one copy only */
+.static .track {
+  width: auto;
+}
+
+.static .copy {
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+.static .copy[aria-hidden="true"] {
+  display: none;
+}

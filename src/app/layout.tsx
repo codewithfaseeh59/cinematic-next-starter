@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { ReactNode } from "react";
+import { SmoothScroll } from "@/components/animation/SmoothScroll";
 import "@/styles/tokens.css";
 import "@/styles/global.css";
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

@@ -1,0 +1,12 @@
+.line {
+  display: block;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.piece {
+  display: inline-block;
+}
