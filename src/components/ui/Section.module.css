@@ -1,0 +1,8 @@
+.section {
+  position: relative;
+  padding-block: var(--space-8);
+
+  /* skip layout and paint for sections far below the viewport; "auto" remembers the real height once rendered */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 40rem;
+}
