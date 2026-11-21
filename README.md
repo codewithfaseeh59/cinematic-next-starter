@@ -1,8 +1,14 @@
 # cinematic-next-starter
 
+[![CI](https://github.com/codewithfaseeh59/cinematic-next-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/codewithfaseeh59/cinematic-next-starter/actions/workflows/ci.yml)
+
 A free starter template for cinematic, scroll-driven landing pages. Click **Use this template**, edit one config file, deploy.
 
 Built with Next.js (App Router), React, TypeScript (strict), GSAP + ScrollTrigger, Lenis, CSS Modules, Vitest and Testing Library. The demo content is a fictional studio called Nocturne Studio.
+
+![The Nocturne Studio hero: a large split-text headline over a parallax visual](docs/screenshots/hero.jpg)
+
+![The /components demo page showing the SplitText and Reveal primitives](docs/screenshots/components.jpg)
 
 ## Quick start
 
@@ -206,7 +212,7 @@ src/
 ## Quality
 
 - `npm run typecheck`, `lint`, `test` and `build` run in GitHub Actions on every push and pull request.
-- Local Lighthouse (mobile, simulated throttling, production build): Accessibility 100, Best Practices 96, SEO 100, no layout shift. Performance lands around 85 to 90 and moves a few points from run to run. To keep the main thread free, one-shot reveals use the browser's Web Animations API, heavier GSAP effects start when the browser is idle, and below-the-fold sections use `content-visibility: auto`. Run your own audit after you add your content.
+- Local Lighthouse (mobile, simulated throttling, production build, several runs): Accessibility 100, Best Practices 96, SEO 100, no layout shift. Performance is usually 85 to 88, with a best run of 90 and a worst of 72 on a busy machine, so it does not reliably reach 90 yet. To keep the main thread free, one-shot reveals use the browser's Web Animations API, heavier GSAP effects start when the browser is idle, and below-the-fold sections use `content-visibility: auto`. Run your own audit after you add your content.
 
 ## License
 
