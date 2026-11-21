@@ -1,19 +1,25 @@
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import { Cta } from "@/components/sections/Cta";
+import { Features } from "@/components/sections/Features";
+import { Footer } from "@/components/sections/Footer";
+import { Hero } from "@/components/sections/Hero";
+import { MarqueeStrip } from "@/components/sections/MarqueeStrip";
+import { Showcase } from "@/components/sections/Showcase";
+import { Stats } from "@/components/sections/Stats";
+import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function HomePage() {
   return (
-    <main id="main">
-      <Section>
-        <Container>
-          <h1 style={{ fontSize: "var(--text-hero)", lineHeight: "var(--leading-tight)" }}>
-            Nocturne Studio
-          </h1>
-          <p style={{ marginTop: "var(--space-4)", color: "var(--color-text-muted)" }}>
-            We design and build cinematic digital experiences.
-          </p>
-        </Container>
-      </Section>
-    </main>
+    <>
+      <main id="main">
+        <Hero />
+        <MarqueeStrip />
+        <Showcase />
+        <Features />
+        <Stats />
+        <Testimonials />
+        <Cta />
+      </main>
+      <Footer />
+    </>
   );
 }
