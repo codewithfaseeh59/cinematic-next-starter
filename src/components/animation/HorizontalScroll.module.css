@@ -1,0 +1,52 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-5);
+  min-height: 100vh;
+  padding-block: var(--space-6);
+}
+
+/* default: a hand-scrollable row, so nothing is hidden without JS or with reduced motion */
+.viewport {
+  overflow-x: auto;
+  padding-inline: var(--gutter);
+  scroll-snap-type: x proximity;
+}
+
+.track {
+  display: flex;
+  gap: var(--space-4);
+  width: max-content;
+}
+
+.track > * {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* pinned mode: GSAP moves the track, so the native scrollbar goes away */
+.section[data-pinned="true"] .viewport {
+  overflow: hidden;
+  scroll-snap-type: none;
+}
+
+/* progress line: only shown while the section is pinned */
+.progress {
+  display: none;
+  height: 2px;
+  margin-inline: var(--gutter);
+  background: var(--color-border);
+}
+
+.section[data-pinned="true"] .progress {
+  display: block;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+}
