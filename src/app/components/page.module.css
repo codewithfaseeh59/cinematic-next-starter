@@ -1,0 +1,98 @@
+.eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--text-hero);
+  line-height: var(--leading-tight);
+}
+
+.lead {
+  max-width: 40rem;
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+}
+
+.heading {
+  font-size: var(--text-xl);
+}
+
+.note {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.stack {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.sample {
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.gap {
+  margin-top: var(--space-4);
+}
+
+.tile {
+  display: grid;
+  min-width: 9rem;
+  min-height: 9rem;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.marqueeItem {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.parallax {
+  height: 28rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.counter {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+}
+
+.slide {
+  display: grid;
+  align-content: end;
+  gap: var(--space-2);
+  width: min(80vw, 22rem);
+  height: 20rem;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
