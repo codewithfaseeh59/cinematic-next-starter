@@ -1,8 +1,10 @@
 # cinematic-next-starter
 
-[![CI](https://github.com/codewithfaseeh59/cinematic-next-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/codewithfaseeh59/cinematic-next-starter/actions/workflows/ci.yml)
+[![CI](https://github.com/codewithfaseeh59/cinematic-next-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/codewithfaseeh59/cinematic-next-starter/actions/workflows/ci.yml) [![Live demo](https://img.shields.io/badge/live-demo-brightgreen)](https://nocturne-cinematic.vercel.app/)
 
 A free starter template for cinematic, scroll-driven landing pages. Click **Use this template**, edit one config file, deploy.
+
+**Live demo:** https://nocturne-cinematic.vercel.app/
 
 Built with Next.js (App Router), React, TypeScript (strict), GSAP + ScrollTrigger, Lenis, CSS Modules, Vitest and Testing Library. The demo content is a fictional studio called Nocturne Studio.
 
@@ -17,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. Every primitive is also shown live at http://localhost:3000/components.
+Open `localhost:3000` in your browser. Every primitive is also shown on the [live components page](https://nocturne-cinematic.vercel.app/components).
 
 ## Make it yours
 
